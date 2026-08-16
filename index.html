@@ -10,7 +10,11 @@
 <body>
     <header>
         <nav>
-            <h2>My Journey</h2>
+            <div class="brand">
+                <img src="images/logo.jpg" alt="PressCode logo">
+
+                <h2><span>PRESS</span><span class="brand-code">CODES</span></h2>
+            </div>
 
             <button class="menu-btn" id="menu-btn">
                  ☰
@@ -26,7 +30,19 @@
         </nav>
     </header>
 
-    
+    <section id="home">
+        <p class="eyebrow">WELCOME TO PRESSCODES</p>
+        <h1>I'm learning.<br><span class="build">I'm building.</span><br>I'm becoming.</h1>
+
+        <p>
+            I'm a web developer building real projects while growing my skills, solving problems and turning ideas into
+            working experiences.
+        </p>
+
+        <button onclick="document.querySelector('#projects').scrollIntoView()">
+            View My Projects
+        </button>
+    </section>
 
     <section id="projects">
         <div class="section-heading">
@@ -87,29 +103,75 @@
                     </a>
                 </div>
             </article>
+
+            <article class="project-card">
+                <span class="project-number">03</span>
+                <div>
+                    <h3>To-do-List App</h3>
+                    <p>
+                        A task management web app I built with JavaScript skills. 
+                        Users can add, edit, complete, delete and clear tasks, with local storage keeping tasks saved after the page is refreshed.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Local Storage</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://oluwasegunbamidele00-dev.github.io/todo-app/" target="_blank">
+                        Live Project ↗️
+                    </a>
+
+                    <a href="https://github.com/oluwasegunbamidele00-dev/todo-app" target="_blank">
+                        GitHub ↗️
+                    </a>
+                </div>
+            </article>
         </div>
+    </section>
 
     <section id="about">
-        <div class="section-heading">
-            <p class="eyebrow">ABOUT ME</p>
+        <div class="about-content">
 
-            <h2>I'm learning by building</h2>
-            <p>
-                I'm learning web development by building real things, solving problems and understanding how the technology works instead of simply memorizing code.
-            </p>
-        </div>
+        
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="profile photo">
 
-        <div>
-            <h3>Where I am now</h3>
+                <div class="profile-intro">
+                    <h3>Bamidele Oluwasegun</h3>
+                    <p>Web Developer</p>
+                </div>
+            </div>
 
-            <p>
-                I have experience with HTML, CSS and Python, I'm currentlydeveloping my JavaScript skills. 
-                I've also worked with Python and I'm working toward becoming stronger in backend development.
-            </p>
+            <div class="about-text">
+            
+                <div class="section-heading">
+                    <p class="eyebrow">ABOUT ME</p>
+
+                    <h2>I'm learning by building</h2>
+                    <p>
+                        I'm learning web development by building real things, solving problems and understanding how the technology works instead of simply memorizing code.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Where I am now</h3>
+
+                    <p>
+                        I have experience with HTML, CSS and Python, I'm currently developing my JavaScript skills. 
+                        I've also worked with Python and I'm working toward becoming stronger in backend development.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="journey">
+        
         <div class="section-heading">
             <p class="eyebrow">THE ROAD SO FAR</p>
             <h2>My Journey</h2>
@@ -207,7 +269,7 @@
     </section>
 
     <footer>
-        <p>© 2026 My Coding Journey</p>
+        <p>© 2026 | <span>Press</span><span class="brand-code">Code</span></p>
         <p>Built while learning.</p>
     </footer>
 

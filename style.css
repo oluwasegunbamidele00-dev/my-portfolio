@@ -100,6 +100,16 @@ nav ul a:hover::after {
     padding: 80px 8%;
 }
 
+#home button {
+    width: fit-content;
+    padding: 14px 24px;
+    border: none;
+    background: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 #home h1 {
     max-width: 800px;
     font-size: clamp(3rem, 7vw, 6rem);
@@ -174,7 +184,7 @@ section p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transfrom 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -200,6 +210,7 @@ section p {
 .project-card:hover {
     transform: translateY(-6px);
     border-color: #555555;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35)
 }
 
 .project-number {
@@ -285,10 +296,11 @@ section p {
     }
 
 .about-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+
 }
 
 .about-content h3 {
@@ -357,6 +369,11 @@ section p {
     color: #ffffff;
 }
 
+.brand-code {
+    color: teal;
+}
+
+
 footer {
     border-top: 1px solid #252525;
     margin-top: 100px;
@@ -367,6 +384,87 @@ footer {
     color: #666666;
     font-size: 13px;
 }
+
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 280px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    border: 1px solid #333333;
+}
+
+.about-text {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #252525;
+}
+
+.profile-intro {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.profile-intro h3 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.profile-intro p {
+    color: #777777;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-text .section-heading {
+    margin-bottom: 40px;
+}
+
+.about-text h2 {
+    max-width: 600px;
+
+}
+
+.about-text h3 {
+    color: #ffffff;
+}
+
+.build {
+    color: teal;
+}
+
+#home h1 {
+    max-width: 800px;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    margin-bottom: 30px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
 
 @media (max-width: 700px) {
 
@@ -467,12 +565,26 @@ footer {
     }
 
     .about-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 40px;
     }
 
     footer {
         flex-direction: column;
+    }
+
+    .profile-image {
+        width: 220px;
+        flex: none;
+    }
+
+    .profile-image img {
+        height: 280px;
+    }
+
+    .about-text {
+        padding-left: 0;
+        border-left: none;
     }
    
 }
