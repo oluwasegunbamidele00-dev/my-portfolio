@@ -495,7 +495,7 @@ footer {
 
     #home p {
         font-size: 16px;
-        letter-spacing: -2px;
+        letter-spacing: normal;
     }
 
     section {
